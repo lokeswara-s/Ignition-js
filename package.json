@@ -1,0 +1,52 @@
+{
+  "name": "node-js-quick-starter",
+  "version": "1.0.0",
+  "description": "A quick node js starter kit for bulding Restfull services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "NODE_PATH=public nodemon --watch ./ --exec babel-node public/index.js --ignore dist --ignore package.json",
+    "build2": "rm -rf dist && nodemon ./public/index.js --exec babel-node --preset=env,stage-3",
+    "build": "rm -rf dist && babel ./ -d dist --ignore node_modules",
+    "run-build-server": "node ./dist/public/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lokeswara-s/node-js-quick-starter.git"
+  },
+  "keywords": [
+    "node-js",
+    "node",
+    "boilerplate for nodejs",
+    "nodejs",
+    "template",
+    "nodejs",
+    "apis",
+    "boilerplate",
+    "nodejs"
+  ],
+  "author": "lokeswara.sane@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lokeswara-s/node-js-quick-starter/issues"
+  },
+  "homepage": "https://github.com/lokeswara-s/node-js-quick-starter#readme",
+  "devDependencies": {
+    "@babel/core": "^6.0.0-bridge.1",
+    "@babel/preset-env": "^7.2.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-plugin-wildcard": "^5.0.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-loader": "^8.0.0-beta.6",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "mongodb": "^3.1.10",
+    "mysql": "^2.16.0",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
