@@ -1,5 +1,7 @@
 import User from "../../../database/Models/User";
 
+import UserModel from '../../../database/Migrations/User'
+
 class HomeController{
 
     constructor(){
@@ -12,6 +14,7 @@ class HomeController{
     }
 
     async getTemplate(req, res){
+        console.log(new UserModel().createTable())
         res.send(
             `<h1>
                 Hello World
