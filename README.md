@@ -1,1 +1,1 @@
-# node-js-quick-starter
+# ignition-js
